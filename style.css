@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    transition: background-color 0.5s ease;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+button {
+    all: unset;
+    width: 200px;
+    height: 300px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button.disney {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSch7rCtqw8DlD6fJ5CeCtZoFZyfL4iX-FTYA&s');
+}
+
+button.hbo {
+    background-image: url('https://preview.redd.it/anu6azdlmbca1.jpg?auto=webp&s=e898cc51f9948681cfa48afcf1ac74c563262c7e');
+}
+
+button.spotify {
+    background-image: url('https://w0.peakpx.com/wallpaper/1015/585/HD-wallpaper-spotify-app-black-green-logo-logos-music-spotify-music-streaming-thumbnail.jpg');
+}
+
+button.youtube {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png');
+}
+
+button.crunchyroll {
+    background-image: url('https://i.pinimg.com/736x/fa/a7/e8/faa7e80c57c1c7c0b70c24f4ba6efcc1.jpg');
+}
+
+button.paramount {
+    background-image: url('https://i.pinimg.com/736x/77/b9/3b/77b93badf69b35d4ec9f18986541c098.jpg');
+}
+
+/* Colores de fondo dinámicos para el body al hacer hover */
+button.disney:hover ~ body {
+    background-color: #1660a1; /* Azul Disney+ */
+}
+
+button.hbo:hover ~ body {
+    background-color:rgb(52, 14, 86); /* Rojo HBO */
+}
+
+button.spotify:hover ~ body {
+    background-color: #1db954; /* Verde Spotify */
+}
+
+button.youtube:hover ~ body {
+    background-color: #ff0000; /* Rojo YouTube */
+}
+
+button.crunchyroll:hover ~ body {
+    background-color: #ff6600; /* Naranja Crunchyroll */
+}
+
+button.paramount:hover ~ body {
+    background-color: #0e3392; /* Azul Paramount */
+}
+
+.card {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+button:hover .card {
+    transform: translateY(0);
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
