@@ -8,12 +8,12 @@ function cambiarFondo(color) {
 
 // Objeto para asociar clases con colores
 const coloresFondo = {
-    disney: 'rgba(29, 136, 229, 0.6)', // Azul Disney+
-    hbo: 'rgba(121, 41, 174, 0.6)',    // Rojo HBO
+    disney: 'rgba(27, 99, 162, 0.6)', // Azul Disney+
+    hbo: 'rgba(55, 13, 83, 0.6)',    // Rojo HBO
     spotify: 'rgba(29, 185, 84, 0.6)', // Verde Spotify
     youtube: 'rgba(255, 0, 0, 0.6)',   // Rojo YouTube
     crunchyroll: 'rgba(255, 102, 0, 0.6)', // Naranja Crunchyroll
-    paramount: 'rgba(14, 77, 146, 0.6)'  // Azul Paramount
+    paramount: 'rgba(14, 51, 146, 0.6)'  // Azul Paramount
 };
 
 // Fondo inicial

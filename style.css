@@ -54,16 +54,16 @@ button.crunchyroll {
 }
 
 button.paramount {
-    background-image: url('https://snaau.co/cdn/shop/products/ParamountPlus15dias.jpg?v=1666030450');
+    background-image: url('https://i.pinimg.com/736x/77/b9/3b/77b93badf69b35d4ec9f18986541c098.jpg');
 }
 
 /* Colores de fondo dinámicos para el body al hacer hover */
 button.disney:hover ~ body {
-    background-color: #1d88e5; /* Azul Disney+ */
+    background-color: #1660a1; /* Azul Disney+ */
 }
 
 button.hbo:hover ~ body {
-    background-color: #6a21ae; /* Rojo HBO */
+    background-color:rgb(52, 14, 86); /* Rojo HBO */
 }
 
 button.spotify:hover ~ body {
@@ -79,7 +79,7 @@ button.crunchyroll:hover ~ body {
 }
 
 button.paramount:hover ~ body {
-    background-color: #0e4d92; /* Azul Paramount */
+    background-color: #0e3392; /* Azul Paramount */
 }
 
 .card {
